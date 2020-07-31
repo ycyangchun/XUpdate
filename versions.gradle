@@ -181,7 +181,9 @@ static def addRepos(RepositoryHandler handler) {
     //Add the JitPack repository
     handler.maven { url "https://jitpack.io" }
     //Add the aliyun repository
-    handler.maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    handler.maven { url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    handler.maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+    handler.maven { url 'https://oss.sonatype.org/content/repositories/snapshots'}
     //Add the Local repository
     handler.maven{ url 'LocalRepository'}
 }

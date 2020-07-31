@@ -6,11 +6,14 @@ buildscript {
     dependencies {
         classpath deps.android_gradle_plugin
         classpath deps.android_maven_gradle_plugin
-
         classpath 'com.github.xuexiangjys.XAOP:xaop-plugin:1.0.5'
 
     }
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots'}
+        jcenter()
         google()
     }
 }
